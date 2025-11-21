@@ -1,0 +1,44 @@
+Package: GenScreenBayes
+Title: Tweedie-Based Empirical Bayes Genomic Screening
+Version: 0.0.1
+Authors@R: c(
+    person("Himel", "Mallick",
+           email = "you@example.com",
+           role = c("aut", "cre")),
+    person("A. Lawrence", "Gould",
+           email = "larry_gould@merck.com",
+           role = "aut")
+  )
+Description: Tools for empirical Bayes genomic screening using Tweedie mixture
+    models. Provides functions to estimate control and test Tweedie parameters,
+    compute marginal densities and likelihood ratios, evaluate survival
+    probabilities for test-control differences, perform posterior inference
+    for pi0, and obtain gene-level screening probabilities, with plotting
+    utilities for posterior pi0 summaries.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Depends:
+    R (>= 4.1.0)
+Imports:
+    stringr,
+    future,
+    future.apply,
+    furrr,
+    mvQuad,
+    gtools,
+    purrr,
+    maxLik,
+    memoise,
+    tweedie,
+    ggplot2,
+    parallel,
+    stats,
+    utils
+Suggests:
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
+Config/testthat/edition: 3
